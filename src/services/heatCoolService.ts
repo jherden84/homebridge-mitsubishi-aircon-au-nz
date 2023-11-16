@@ -80,7 +80,7 @@ export class HeatCoolService extends AbstractService {
             //this.platform.log.error('power***', b);
 
             //this is the test to check if Zones are present, if there are defined zones (more than 2) proceed to find accessory.
-            if (b.zones.lenth || b.zones.length >=2)
+            if (b.zones.length || b.zones.length >=2)
             {
               this.platform.log.debug('Looking for zones to update:', b.zones.length, 'found. Proceeding to find accessories and updateCharacteristic');
             for (let k = 0; k < b.zones.length; k++)
